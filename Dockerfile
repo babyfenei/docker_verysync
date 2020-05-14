@@ -17,6 +17,6 @@ WORKDIR /verysync-linux-amd64-v${VERSYNC_VERSION}
 
 VOLUME /data
 
-EXPOSE 8886 22330
+EXPOSE 8886 22330 3000 3080 22027/udp 22037/udp
 
 ENTRYPOINT ["./verysync","-gui-address","0.0.0.0:8886"]
